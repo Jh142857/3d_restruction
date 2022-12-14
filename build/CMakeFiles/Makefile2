@@ -53,7 +53,9 @@ CMAKE_BINARY_DIR = /home/cjh/Course/计算机视觉/3d_restruction/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/main.dir/all
+all: CMakeFiles/Quasi.dir/all
+all: CMakeFiles/SGBM.dir/all
+all: CMakeFiles/BM.dir/all
 
 .PHONY : all
 
@@ -63,36 +65,92 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/main.dir/clean
+clean: CMakeFiles/Quasi.dir/clean
+clean: CMakeFiles/SGBM.dir/clean
+clean: CMakeFiles/BM.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/main.dir
+# Target rules for target CMakeFiles/Quasi.dir
 
 # All Build rule for target.
-CMakeFiles/main.dir/all:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/depend
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cjh/Course/计算机视觉/3d_restruction/build/CMakeFiles --progress-num=1,2 "Built target main"
-.PHONY : CMakeFiles/main.dir/all
+CMakeFiles/Quasi.dir/all:
+	$(MAKE) -f CMakeFiles/Quasi.dir/build.make CMakeFiles/Quasi.dir/depend
+	$(MAKE) -f CMakeFiles/Quasi.dir/build.make CMakeFiles/Quasi.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cjh/Course/计算机视觉/3d_restruction/build/CMakeFiles --progress-num=3,4 "Built target Quasi"
+.PHONY : CMakeFiles/Quasi.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/main.dir/rule: cmake_check_build_system
+CMakeFiles/Quasi.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cjh/Course/计算机视觉/3d_restruction/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/main.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Quasi.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cjh/Course/计算机视觉/3d_restruction/build/CMakeFiles 0
-.PHONY : CMakeFiles/main.dir/rule
+.PHONY : CMakeFiles/Quasi.dir/rule
 
 # Convenience name for target.
-main: CMakeFiles/main.dir/rule
+Quasi: CMakeFiles/Quasi.dir/rule
 
-.PHONY : main
+.PHONY : Quasi
 
 # clean rule for target.
-CMakeFiles/main.dir/clean:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/clean
-.PHONY : CMakeFiles/main.dir/clean
+CMakeFiles/Quasi.dir/clean:
+	$(MAKE) -f CMakeFiles/Quasi.dir/build.make CMakeFiles/Quasi.dir/clean
+.PHONY : CMakeFiles/Quasi.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/SGBM.dir
+
+# All Build rule for target.
+CMakeFiles/SGBM.dir/all:
+	$(MAKE) -f CMakeFiles/SGBM.dir/build.make CMakeFiles/SGBM.dir/depend
+	$(MAKE) -f CMakeFiles/SGBM.dir/build.make CMakeFiles/SGBM.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cjh/Course/计算机视觉/3d_restruction/build/CMakeFiles --progress-num=5,6 "Built target SGBM"
+.PHONY : CMakeFiles/SGBM.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/SGBM.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cjh/Course/计算机视觉/3d_restruction/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/SGBM.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cjh/Course/计算机视觉/3d_restruction/build/CMakeFiles 0
+.PHONY : CMakeFiles/SGBM.dir/rule
+
+# Convenience name for target.
+SGBM: CMakeFiles/SGBM.dir/rule
+
+.PHONY : SGBM
+
+# clean rule for target.
+CMakeFiles/SGBM.dir/clean:
+	$(MAKE) -f CMakeFiles/SGBM.dir/build.make CMakeFiles/SGBM.dir/clean
+.PHONY : CMakeFiles/SGBM.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/BM.dir
+
+# All Build rule for target.
+CMakeFiles/BM.dir/all:
+	$(MAKE) -f CMakeFiles/BM.dir/build.make CMakeFiles/BM.dir/depend
+	$(MAKE) -f CMakeFiles/BM.dir/build.make CMakeFiles/BM.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cjh/Course/计算机视觉/3d_restruction/build/CMakeFiles --progress-num=1,2 "Built target BM"
+.PHONY : CMakeFiles/BM.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/BM.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cjh/Course/计算机视觉/3d_restruction/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/BM.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cjh/Course/计算机视觉/3d_restruction/build/CMakeFiles 0
+.PHONY : CMakeFiles/BM.dir/rule
+
+# Convenience name for target.
+BM: CMakeFiles/BM.dir/rule
+
+.PHONY : BM
+
+# clean rule for target.
+CMakeFiles/BM.dir/clean:
+	$(MAKE) -f CMakeFiles/BM.dir/build.make CMakeFiles/BM.dir/clean
+.PHONY : CMakeFiles/BM.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

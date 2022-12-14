@@ -111,44 +111,124 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named main
+# Target rules for targets named Quasi
 
 # Build rule for target.
-main: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 main
-.PHONY : main
+Quasi: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Quasi
+.PHONY : Quasi
 
 # fast build rule for target.
-main/fast:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-.PHONY : main/fast
+Quasi/fast:
+	$(MAKE) -f CMakeFiles/Quasi.dir/build.make CMakeFiles/Quasi.dir/build
+.PHONY : Quasi/fast
 
-src/main.o: src/main.cpp.o
+#=============================================================================
+# Target rules for targets named SGBM
 
-.PHONY : src/main.o
+# Build rule for target.
+SGBM: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 SGBM
+.PHONY : SGBM
+
+# fast build rule for target.
+SGBM/fast:
+	$(MAKE) -f CMakeFiles/SGBM.dir/build.make CMakeFiles/SGBM.dir/build
+.PHONY : SGBM/fast
+
+#=============================================================================
+# Target rules for targets named BM
+
+# Build rule for target.
+BM: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 BM
+.PHONY : BM
+
+# fast build rule for target.
+BM/fast:
+	$(MAKE) -f CMakeFiles/BM.dir/build.make CMakeFiles/BM.dir/build
+.PHONY : BM/fast
+
+src/BM.o: src/BM.cpp.o
+
+.PHONY : src/BM.o
 
 # target to build an object file
-src/main.cpp.o:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
+src/BM.cpp.o:
+	$(MAKE) -f CMakeFiles/BM.dir/build.make CMakeFiles/BM.dir/src/BM.cpp.o
+.PHONY : src/BM.cpp.o
 
-src/main.i: src/main.cpp.i
+src/BM.i: src/BM.cpp.i
 
-.PHONY : src/main.i
+.PHONY : src/BM.i
 
 # target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
+src/BM.cpp.i:
+	$(MAKE) -f CMakeFiles/BM.dir/build.make CMakeFiles/BM.dir/src/BM.cpp.i
+.PHONY : src/BM.cpp.i
 
-src/main.s: src/main.cpp.s
+src/BM.s: src/BM.cpp.s
 
-.PHONY : src/main.s
+.PHONY : src/BM.s
 
 # target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
+src/BM.cpp.s:
+	$(MAKE) -f CMakeFiles/BM.dir/build.make CMakeFiles/BM.dir/src/BM.cpp.s
+.PHONY : src/BM.cpp.s
+
+src/Quasi.o: src/Quasi.cpp.o
+
+.PHONY : src/Quasi.o
+
+# target to build an object file
+src/Quasi.cpp.o:
+	$(MAKE) -f CMakeFiles/Quasi.dir/build.make CMakeFiles/Quasi.dir/src/Quasi.cpp.o
+.PHONY : src/Quasi.cpp.o
+
+src/Quasi.i: src/Quasi.cpp.i
+
+.PHONY : src/Quasi.i
+
+# target to preprocess a source file
+src/Quasi.cpp.i:
+	$(MAKE) -f CMakeFiles/Quasi.dir/build.make CMakeFiles/Quasi.dir/src/Quasi.cpp.i
+.PHONY : src/Quasi.cpp.i
+
+src/Quasi.s: src/Quasi.cpp.s
+
+.PHONY : src/Quasi.s
+
+# target to generate assembly for a file
+src/Quasi.cpp.s:
+	$(MAKE) -f CMakeFiles/Quasi.dir/build.make CMakeFiles/Quasi.dir/src/Quasi.cpp.s
+.PHONY : src/Quasi.cpp.s
+
+src/SGBM.o: src/SGBM.cpp.o
+
+.PHONY : src/SGBM.o
+
+# target to build an object file
+src/SGBM.cpp.o:
+	$(MAKE) -f CMakeFiles/SGBM.dir/build.make CMakeFiles/SGBM.dir/src/SGBM.cpp.o
+.PHONY : src/SGBM.cpp.o
+
+src/SGBM.i: src/SGBM.cpp.i
+
+.PHONY : src/SGBM.i
+
+# target to preprocess a source file
+src/SGBM.cpp.i:
+	$(MAKE) -f CMakeFiles/SGBM.dir/build.make CMakeFiles/SGBM.dir/src/SGBM.cpp.i
+.PHONY : src/SGBM.cpp.i
+
+src/SGBM.s: src/SGBM.cpp.s
+
+.PHONY : src/SGBM.s
+
+# target to generate assembly for a file
+src/SGBM.cpp.s:
+	$(MAKE) -f CMakeFiles/SGBM.dir/build.make CMakeFiles/SGBM.dir/src/SGBM.cpp.s
+.PHONY : src/SGBM.cpp.s
 
 # Help Target
 help:
@@ -158,10 +238,18 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... main"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
+	@echo "... Quasi"
+	@echo "... SGBM"
+	@echo "... BM"
+	@echo "... src/BM.o"
+	@echo "... src/BM.i"
+	@echo "... src/BM.s"
+	@echo "... src/Quasi.o"
+	@echo "... src/Quasi.i"
+	@echo "... src/Quasi.s"
+	@echo "... src/SGBM.o"
+	@echo "... src/SGBM.i"
+	@echo "... src/SGBM.s"
 .PHONY : help
 
 

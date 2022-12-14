@@ -1,8 +1,8 @@
 import cv2
 
 
-image1 = cv2.imread("./images/im2.png", flags=0)
-image2 = cv2.imread("./images/im3.png", flags=0)
+image1 = cv2.imread("./images/im2.png", flags=3)
+image2 = cv2.imread("./images/im3.png", flags=3)
 bm = cv2.StereoBM_create(numDisparities=16, blockSize=9)
 numberOfDisparities = ((1920 // 8) + 15) & -16  # 640对应是分辨率的宽
  

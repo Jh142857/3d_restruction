@@ -1,5 +1,7 @@
 cd build
 cmake ..
 make
-../out/main
+../out/BM
+../out/SGBM
+../out/Quasi
 cd ..

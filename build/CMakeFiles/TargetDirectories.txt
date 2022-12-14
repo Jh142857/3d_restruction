@@ -1,3 +1,5 @@
 /home/cjh/Course/计算机视觉/3d_restruction/build/CMakeFiles/rebuild_cache.dir
 /home/cjh/Course/计算机视觉/3d_restruction/build/CMakeFiles/edit_cache.dir
-/home/cjh/Course/计算机视觉/3d_restruction/build/CMakeFiles/main.dir
+/home/cjh/Course/计算机视觉/3d_restruction/build/CMakeFiles/Quasi.dir
+/home/cjh/Course/计算机视觉/3d_restruction/build/CMakeFiles/SGBM.dir
+/home/cjh/Course/计算机视觉/3d_restruction/build/CMakeFiles/BM.dir
